@@ -1,0 +1,169 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>vonic</title>
+        <meta charset="utf-8">
+        <meta name="description" content="Vionic - Vue + ionic.">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+        <meta property="og:type" content="article">
+        <meta property="og:title" content="vue.js">
+        <meta property="og:description" content="Vionic - Vue + ionic.">
+        <meta property="og:image" content="https://vionic.io/images/logo.png">
+
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:title" content="vue.js">
+        <meta name="twitter:description" content="Vionic - Vue + ionic.">
+        <meta name="twitter:image" content="https://vionic.io/images/logo.png">
+
+        <link rel="icon" href="/images/logo.png" type="image/x-icon">
+
+
+        <!-- main page styles -->
+        <link rel="stylesheet" href="/css/page.css">
+
+        <!-- this needs to be loaded before guide's inline scripts -->
+        <script src="/js/vue.js"></script>
+        <script>window.PAGE_TYPE = ""</script>
+    </head>
+    <body class="docs">        <div id="mobile-bar" >
+            <a class="menu-button"></a>
+            <a class="logo" href="/"></a>
+        </div>
+        <div id="header">
+  <a id="logo" href="/">
+    <img src="/images/logo.png">
+    <span>Vonic</span>
+  </a>
+  <ul id="nav">
+    <li>
+  <form id="search-form">
+    <input type="text" id="search-query-nav" class="search-query st-default-search-input">
+  </form>
+</li>
+<li><a href="/vonic/component/" class="nav-link">组件</a></li>
+<li><a href="/v2/api/" class="nav-link">规范</a></li>
+<li><a href="javascript:void(0)" class="nav-link">模式</a></li>
+<li><a href="javascript:void(0)" target="_blank" class="nav-link">实践</a></li>
+<li><a href="javascript:void(0)" class="nav-link">资源</a></li>
+
+<li class="nav-dropdown-container">
+  <a class="nav-link">Community</a><span class="arrow"></span>
+  <ul class="nav-dropdown">
+    <li><a href="https://github.com/vuejs/vue" class="nav-link" target="_blank">GitHub</a></li>
+    <li><a href="http://forum.vuejs.org" class="nav-link" target="_blank">Forum</a></li>
+    <li><a href="https://gitter.im/vuejs/vue" class="nav-link" target="_blank">Chat</a></li>
+    <li><a href="https://twitter.com/vuejs" class="nav-link" target="_blank">Twitter</a></li>
+    <li><a href="https://vuejsjob.com/?ref=vuejs" class="nav-link" target="_blank">Jobs</a></li>
+  </ul>
+</li>
+
+
+  </ul>
+</div>
+
+        
+            <div id="main" class="fix-sidebar">
+                
+                    <div class="sidebar">
+  <ul class="main-menu">
+    <li>
+  <form id="search-form">
+    <input type="text" id="search-query-sidebar" class="search-query st-default-search-input">
+  </form>
+</li>
+<li><a href="/vonic/component/" class="nav-link">组件</a></li>
+<li><a href="/v2/api/" class="nav-link">规范</a></li>
+<li><a href="javascript:void(0)" class="nav-link">模式</a></li>
+<li><a href="javascript:void(0)" target="_blank" class="nav-link">实践</a></li>
+<li><a href="javascript:void(0)" class="nav-link">资源</a></li>
+
+<li class="nav-dropdown-container">
+  <a class="nav-link">Community</a><span class="arrow"></span>
+  <ul class="nav-dropdown">
+    <li><a href="https://github.com/vuejs/vue" class="nav-link" target="_blank">GitHub</a></li>
+    <li><a href="http://forum.vuejs.org" class="nav-link" target="_blank">Forum</a></li>
+    <li><a href="https://gitter.im/vuejs/vue" class="nav-link" target="_blank">Chat</a></li>
+    <li><a href="https://twitter.com/vuejs" class="nav-link" target="_blank">Twitter</a></li>
+    <li><a href="https://vuejsjob.com/?ref=vuejs" class="nav-link" target="_blank">Jobs</a></li>
+  </ul>
+</li>
+
+
+  </ul>
+</div>
+
+<div id="hero">
+  <div class="inner">
+    <div class="left">
+      <img class="hero-logo" src="/images/logo.png">
+    </div><div class="right">
+      <h2 class="vue">Vonic</h2>
+      <h1>
+        The Progressive<br>JavaScript Framework
+      </h1>
+      <p>
+        <a class="button" href="/v2/guide/">起步</a>
+        <a class="button white" href="https://github.com/vuejs/vue" target="_blank">GITHUB</a>
+      </p>
+    </div>
+  </div>
+</div>
+
+<div id="highlights">
+  <div class="inner">
+    <div class="point">
+      <h2>Vue</h2>
+      <p>渐进式JavaScript 框架
+      </p>
+    </div>
+
+    <div class="point">
+      <h2>Ionic</h2>
+      <p>跨平台的手机WEB APP 解决方案</p>
+    </div>
+
+    <div class="point">
+      <h2>友好</h2>
+      <p>
+        基于webpack的项目构建，简单易上手
+      </p>
+    </div>
+  </div>
+</div>
+
+<div id="sponsors">
+  <div class="inner">
+    <h3>加入我们</h3>
+    <br>
+    <a class="become-sponsor button white" href="javascript:void(0)">Become a contributors</a>
+  </div>
+</div>
+
+<div id="footer">
+  Released under the <a href="https://opensource.org/licenses/MIT" href="_blank">MIT License</a><br>
+  Copyright &copy; 2014-2016 feedChecken
+</div>
+
+<script>
+var topScrolled = false
+window.addEventListener('scroll', function () {
+  if (window.pageYOffset > 165 && !topScrolled) {
+    topScrolled = true
+    document.getElementById('mobile-bar').classList.remove('top')
+  } else if (window.pageYOffset <= 165 && topScrolled) {
+    topScrolled = false
+    document.getElementById('mobile-bar').classList.add('top')
+  }
+})
+</script>
+
+                
+            </div>
+            <script src="/js/smooth-scroll.min.js"></script>
+        
+        <!-- main custom script for sidebars, version selects etc. -->
+        <script src="/js/common.js"></script>
+    </body>
+</html>

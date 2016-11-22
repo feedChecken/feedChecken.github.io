@@ -1,0 +1,148 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>vonic</title>
+        <meta charset="utf-8">
+        <meta name="description" content="Vionic - Vue + ionic.">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+        <meta property="og:type" content="article">
+        <meta property="og:title" content="vue.js">
+        <meta property="og:description" content="Vionic - Vue + ionic.">
+        <meta property="og:image" content="https://vionic.io/images/logo.png">
+
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:title" content="vue.js">
+        <meta name="twitter:description" content="Vionic - Vue + ionic.">
+        <meta name="twitter:image" content="https://vionic.io/images/logo.png">
+
+        <link rel="icon" href="/images/logo.png" type="image/x-icon">
+
+
+        <!-- main page styles -->
+        <link rel="stylesheet" href="/css/page.css">
+
+        <!-- this needs to be loaded before guide's inline scripts -->
+        <script src="/js/vue.js"></script>
+        <script>window.PAGE_TYPE = "component"</script>
+    </head>
+    <body class="docs">        <div id="mobile-bar" >
+            <a class="menu-button"></a>
+            <a class="logo" href="/"></a>
+        </div>
+        <div id="header">
+  <a id="logo" href="/">
+    <img src="/images/logo.png">
+    <span>Vonic</span>
+  </a>
+  <ul id="nav">
+    <li>
+  <form id="search-form">
+    <input type="text" id="search-query-nav" class="search-query st-default-search-input">
+  </form>
+</li>
+<li><a href="/vonic/component/" class="nav-link">组件</a></li>
+<li><a href="/v2/api/" class="nav-link">规范</a></li>
+<li><a href="javascript:void(0)" class="nav-link">模式</a></li>
+<li><a href="javascript:void(0)" target="_blank" class="nav-link">实践</a></li>
+<li><a href="javascript:void(0)" class="nav-link">资源</a></li>
+
+<li class="nav-dropdown-container">
+  <a class="nav-link">Community</a><span class="arrow"></span>
+  <ul class="nav-dropdown">
+    <li><a href="https://github.com/vuejs/vue" class="nav-link" target="_blank">GitHub</a></li>
+    <li><a href="http://forum.vuejs.org" class="nav-link" target="_blank">Forum</a></li>
+    <li><a href="https://gitter.im/vuejs/vue" class="nav-link" target="_blank">Chat</a></li>
+    <li><a href="https://twitter.com/vuejs" class="nav-link" target="_blank">Twitter</a></li>
+    <li><a href="https://vuejsjob.com/?ref=vuejs" class="nav-link" target="_blank">Jobs</a></li>
+  </ul>
+</li>
+
+
+  </ul>
+</div>
+
+        
+            <div id="main" class="fix-sidebar">
+                
+                    
+    <div class="sidebar">
+    <ul class="main-menu">
+        <li>
+  <form id="search-form">
+    <input type="text" id="search-query-sidebar" class="search-query st-default-search-input">
+  </form>
+</li>
+<li><a href="/vonic/component/" class="nav-link">组件</a></li>
+<li><a href="/v2/api/" class="nav-link">规范</a></li>
+<li><a href="javascript:void(0)" class="nav-link">模式</a></li>
+<li><a href="javascript:void(0)" target="_blank" class="nav-link">实践</a></li>
+<li><a href="javascript:void(0)" class="nav-link">资源</a></li>
+
+<li class="nav-dropdown-container">
+  <a class="nav-link">Community</a><span class="arrow"></span>
+  <ul class="nav-dropdown">
+    <li><a href="https://github.com/vuejs/vue" class="nav-link" target="_blank">GitHub</a></li>
+    <li><a href="http://forum.vuejs.org" class="nav-link" target="_blank">Forum</a></li>
+    <li><a href="https://gitter.im/vuejs/vue" class="nav-link" target="_blank">Chat</a></li>
+    <li><a href="https://twitter.com/vuejs" class="nav-link" target="_blank">Twitter</a></li>
+    <li><a href="https://vuejsjob.com/?ref=vuejs" class="nav-link" target="_blank">Jobs</a></li>
+  </ul>
+</li>
+
+
+    </ul>
+    <div class="list">
+        <h2>
+            Component
+            <!-- <select class="version-select">
+            // </select>
+            -->
+        </h2>
+        <ul class="menu-root">
+            
+                
+                
+                
+                
+                
+                <li>
+                    <a href="/vonic/component/index.html" class="sidebar-link current"></a>
+                </li>
+            
+        </ul>
+    </div>
+</div>
+
+
+<div class="content component with-sidebar ">
+    
+      
+    
+    
+    <h2 id="OVERVIEW"><a href="#OVERVIEW" class="headerlink" title="OVERVIEW"></a>OVERVIEW</h2><h2 id="CSS-COMPONENTS"><a href="#CSS-COMPONENTS" class="headerlink" title="CSS COMPONENTS"></a>CSS COMPONENTS</h2><h2 id="Header"><a href="#Header" class="headerlink" title="Header"></a>Header</h2><h2 id="Content"><a href="#Content" class="headerlink" title="Content"></a>Content</h2><h2 id="Footer"><a href="#Footer" class="headerlink" title="Footer"></a>Footer</h2><h2 id="Buttons"><a href="#Buttons" class="headerlink" title="Buttons"></a>Buttons</h2><h3 id="Block"><a href="#Block" class="headerlink" title="Block"></a>Block</h3><h3 id="Full-Width"><a href="#Full-Width" class="headerlink" title="Full Width"></a>Full Width</h3><h3 id="Different-Sizes"><a href="#Different-Sizes" class="headerlink" title="Different Sizes"></a>Different Sizes</h3><h3 id="Outlined"><a href="#Outlined" class="headerlink" title="Outlined"></a>Outlined</h3><h3 id="Clear"><a href="#Clear" class="headerlink" title="Clear"></a>Clear</h3><h3 id="Icons"><a href="#Icons" class="headerlink" title="Icons"></a>Icons</h3><h3 id="Headers-Footers"><a href="#Headers-Footers" class="headerlink" title="Headers/Footers"></a>Headers/Footers</h3><h3 id="Clear-Buttons-in-Headers"><a href="#Clear-Buttons-in-Headers" class="headerlink" title="Clear Buttons in Headers"></a>Clear Buttons in Headers</h3><h3 id="Button-Bar"><a href="#Button-Bar" class="headerlink" title="Button Bar"></a>Button Bar</h3><h2 id="List"><a href="#List" class="headerlink" title="List"></a>List</h2><h3 id="Divider"><a href="#Divider" class="headerlink" title="Divider"></a>Divider</h3><h3 id="Icons-1"><a href="#Icons-1" class="headerlink" title="Icons"></a>Icons</h3><h3 id="Buttons-1"><a href="#Buttons-1" class="headerlink" title="Buttons"></a>Buttons</h3><h3 id="Avatars"><a href="#Avatars" class="headerlink" title="Avatars"></a>Avatars</h3><h3 id="Thumbnails"><a href="#Thumbnails" class="headerlink" title="Thumbnails"></a>Thumbnails</h3><h3 id="Inset-Lists"><a href="#Inset-Lists" class="headerlink" title="Inset Lists"></a>Inset Lists</h3><h2 id="Cards"><a href="#Cards" class="headerlink" title="Cards"></a>Cards</h2><h3 id="Headers-amp-Footers"><a href="#Headers-amp-Footers" class="headerlink" title="Headers &amp; Footers"></a>Headers &amp; Footers</h3><h3 id="Lists"><a href="#Lists" class="headerlink" title="Lists"></a>Lists</h3><h3 id="Images"><a href="#Images" class="headerlink" title="Images"></a>Images</h3><h3 id="Showcase"><a href="#Showcase" class="headerlink" title="Showcase"></a>Showcase</h3><h2 id="Forms"><a href="#Forms" class="headerlink" title="Forms"></a>Forms</h2><h3 id="Placeholder-Labels"><a href="#Placeholder-Labels" class="headerlink" title="Placeholder Labels"></a>Placeholder Labels</h3><h3 id="Inline-Labels"><a href="#Inline-Labels" class="headerlink" title="Inline Labels"></a>Inline Labels</h3><h3 id="Stacked-Labels"><a href="#Stacked-Labels" class="headerlink" title="Stacked Labels"></a>Stacked Labels</h3><h3 id="Floating-Labels"><a href="#Floating-Labels" class="headerlink" title="Floating Labels"></a>Floating Labels</h3><h3 id="Inset-Forms"><a href="#Inset-Forms" class="headerlink" title="Inset Forms"></a>Inset Forms</h3><h3 id="Inset-Inputs"><a href="#Inset-Inputs" class="headerlink" title="Inset Inputs"></a>Inset Inputs</h3><h3 id="Input-Icons"><a href="#Input-Icons" class="headerlink" title="Input Icons"></a>Input Icons</h3><h3 id="Header-Inputs"><a href="#Header-Inputs" class="headerlink" title="Header Inputs"></a>Header Inputs</h3><h2 id="Toggle"><a href="#Toggle" class="headerlink" title="Toggle"></a>Toggle</h2><h2 id="Checkbox"><a href="#Checkbox" class="headerlink" title="Checkbox"></a>Checkbox</h2><h2 id="Radio-Buttons"><a href="#Radio-Buttons" class="headerlink" title="Radio Buttons"></a>Radio Buttons</h2><h2 id="Range"><a href="#Range" class="headerlink" title="Range"></a>Range</h2><h2 id="Select"><a href="#Select" class="headerlink" title="Select"></a>Select</h2><h2 id="Tabs"><a href="#Tabs" class="headerlink" title="Tabs"></a>Tabs</h2><h3 id="Icon-only"><a href="#Icon-only" class="headerlink" title="Icon-only"></a>Icon-only</h3><h3 id="Top-Icon"><a href="#Top-Icon" class="headerlink" title="Top Icon"></a>Top Icon</h3><h3 id="Left-Icon"><a href="#Left-Icon" class="headerlink" title="Left Icon"></a>Left Icon</h3><h3 id="Striped-Style"><a href="#Striped-Style" class="headerlink" title="Striped Style"></a>Striped Style</h3><h2 id="Grid"><a href="#Grid" class="headerlink" title="Grid"></a>Grid</h2><h3 id="Even-Columns"><a href="#Even-Columns" class="headerlink" title="Even Columns"></a>Even Columns</h3><h3 id="Explicit-Column-Sized"><a href="#Explicit-Column-Sized" class="headerlink" title="Explicit Column Sized"></a>Explicit Column Sized</h3><h3 id="Offset-Columns"><a href="#Offset-Columns" class="headerlink" title="Offset Columns"></a>Offset Columns</h3><h3 id="Vertically-Aligned"><a href="#Vertically-Aligned" class="headerlink" title="Vertically Aligned"></a>Vertically Aligned</h3><h3 id="Responsive-Grid"><a href="#Responsive-Grid" class="headerlink" title="Responsive Grid"></a>Responsive Grid</h3><h2 id="Utility"><a href="#Utility" class="headerlink" title="Utility"></a>Utility</h2><h3 id="Colors"><a href="#Colors" class="headerlink" title="Colors"></a>Colors</h3><h3 id="Icons-2"><a href="#Icons-2" class="headerlink" title="Icons"></a>Icons</h3><h3 id="Padding"><a href="#Padding" class="headerlink" title="Padding"></a>Padding</h3>
+    
+    
+    <!-- todo
+    // <div class="device-preview fixed-preview">我是component</div>
+    -->
+    
+      
+    
+    <div class="footer">
+      Caught a mistake or want to contribute to the documentation?
+      <a href="https://github.com/vuejs/vuejs.org/blob/master/src/vonic/component/index.md" target="_blank">
+        Edit this page on Github!
+      </a>
+    </div>
+</div>
+
+                
+            </div>
+            <script src="/js/smooth-scroll.min.js"></script>
+        
+        <!-- main custom script for sidebars, version selects etc. -->
+        <script src="/js/common.js"></script>
+    </body>
+</html>
