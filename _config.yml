@@ -97,7 +97,7 @@ markdown:
 # Docs: http://zespia.tw/hexo/docs/deployment.html
 deploy:
   type: git
-  repository: git@github.com:feedChecken/vue-ioinc.github.io.git
+  repository: git@github.com:feedChecken/feedChecken.github.io.git
   branch: gh-pages
 
 
