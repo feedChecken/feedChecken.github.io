@@ -1,0 +1,12 @@
+<li>
+  <form id="search-form">
+    <input type="text" id="search-query-<%- context %>" class="search-query st-default-search-input">
+  </form>
+</li>
+<li><a href="/vonic/component/" class="nav-link<%- page.path.match(/guide/) ? ' current' : '' %>">组件</a></li>
+<li><a href="/v2/api/" class="nav-link<%- page.path.match(/api/) ? ' current' : '' %>">规范</a></li>
+<li><a href="javascript:void(0)" class="nav-link<%- page.path.match(/examples/) ? ' current' : '' %>">模式</a></li>
+<li><a href="javascript:void(0)" target="_blank" class="nav-link<%- page.path.match(/blog/) ? ' current' : '' %>">实践</a></li>
+<li><a href="javascript:void(0)" class="nav-link<%- page.path.match(/examples/) ? ' current' : '' %>">资源</a></li>
+
+<%- partial('partials/community_dropdown') %>
